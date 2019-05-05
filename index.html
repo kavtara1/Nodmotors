@@ -29,21 +29,31 @@
 			<h1 class="hero_h1">Tesla Model 3</h1>
 			<p class="hero_p">Luxury fast</p>
 			<img class="hero_image" src="assets/images/mainpic.png">
-
-			<ul class="car_specs">
+			<div class="car_specs">
+			<ul >
+				<li class="specs">Power:</li>
 				<li>302 hp</li>
+			</ul>	
+			<ul>
+				<li class="specs">Top Speed:</li>
 				<li>200km/ph</li>
-				<li>after 1000km</li>
+			</ul>	
+			<ul>
+				<li class="specs">Rechage:</li>	
+				<li>after 1000 km</li>
 			</ul>
+			</div>
 
 
 		</section>
+	</div>
 
 		<section class="cars">
 			<h2 class="cars_h2">Available Cars</h1>
 			<p class="cars_p"> Please Use filter for optimal results</p>
+			
 			<form class="form">
-			<select name="Manufacturer" placeholder="ragaca">
+			<select class="selector">
 				<option>Tesla</option>
 				<option>Merseces-Benz</option>
 				<option>BMW</option>
@@ -51,13 +61,13 @@
 
 			</select>
 
-			<select>
+			<select class="selector"> 
 				<option>Model 3</option>
 				<option>Model S</option>
 				<option>Model 3Z</option>
 			</select>
 
-			<select>
+			<select class="selector">
 				<option>2018</option>
 				<option>2017</option>
 				<option>2016</option>
@@ -65,47 +75,88 @@
 				<option>2014</option>
 			</select>
 
+			<select class="amount">
+				<option>20</option>
+				<option>10</option>
+			</select>
+
 
 			</form>
+			</div>
 
 
-			<ul>
-				<li class="car_list">
-					<p>From: 59 000$</p>
+			<ul class="car_list">
+				<li>
+
+					<p>From: 59 000 $</p>
 					<img class="lazy" src="assets/images/1.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                        <span class="red"></span>
+                    </div>
 					<h3>Tesla Model S</h3>
-					<p>302 hp 200 km/ph</p>					
+					<p class="model_specs">302 hp    200 km/ph</p>					
 				</li>
 
 				<li>
-					<p>From: 79 000$</p>
+					<p>From: 79 000 $</p>
 					<img class="lazy" src="assets/images/2.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                    </div>
 					<h3>Tesla Model 3S</h3>
-					<p>343 hp 252 km/ph</p>					
+					<p class="model_specs">343 hp    252 km/ph</p>					
 				</li>
 				<li>
-					<p>From: 103 000$</p>
+					<p>From: 103 000 $</p>
 					<img class="lazy" src="assets/images/3.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="orange"></span>
+                        <span class="gray" ></span>
+                        <span class="green"></span>
+                    </div>
 					<h3>Tesla Model 3Z</h3>
-					<p>380 hp 302 km/ph</p>					
+					<p class="model_specs">380 hp    302 km/ph</p>					
 				</li>
 				<li>
-					<p>From: 61 000$</p>
+					<p>From: 61 000 $</p>
 					<img class="lazy" src="assets/images/4.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                        <span class="yellow" ></span>
+                        <span class="gray"></span>
+                    </div>
 					<h3>The first ever BMW X2</h3>
-					<p>302 hp 200 km/ph</p>					
+					<p class="model_specs">302 hp 200 km/ph</p>					
 				</li>
 				<li>
-					<p>From: 92 000$</p>
+					<p>From: 92 000 $</p>
 					<img class="lazy" src="assets/images/5.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                        <span class="blue" ></span>
+                        <span class="gray"></span>
+                        <span class="pink"></span>
+                    </div>
 					<h3>BMW M6 Gran Coupé</h3>
-					<p>302 hp 252 km/ph</p>					
+					<p class="model_specs">302 hp252 km/ph</p>					
 				</li>
 				<li>
-					<p>From: 132 000$</p>
+					<p>From: 132 000 $</p>
 					<img class="lazy" src="assets/images/6.png">
+					<div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                        <span class="gray" ></span>
+                        <span class="blue"></span>
+                    </div>
 					<h3>BMW X7</h3>
-					<p>380 hp 302 km/ph</p>					
+					<p class="model_specs">380 hp    302 km/ph</p>					
 				</li>
 				
 
@@ -119,16 +170,28 @@
 				
 				<a href=""><img src="assets/images/sa_logo.png"></a>
 				<p>© nodmotors GE 2018</p>
-				<div class="mail">
-				<a href="">(+995) 595 483 217</a>
-				<a href=""> info@nodmotors.ge</a>
+				<div class="">
+				<a href="" class="number">(+995) 595 483 217</a>
+				<a href="" charset="email"> info@nodmotors.ge</a>
 				</div>
 			</div>
 		</footer>
 
 
-
-	</div>
+<!-- <ul class="cars">
+                <li class="tesla">
+                        <span class="from_price">from:</span><span class="price">59 000 $</span>
+                    <a href="#"><img class="lazy" src="media/image/1.png" alt=""></a>
+                    <div class="colors">
+                        <span class="white" ></span>
+                        <span class="black"></span>
+                        <span class="red"></span>
+                    </div>
+                    <h2>Tesla Model 3</h2>
+                    <span class="cars_hp">302 hp</span>
+                    <span class="cars_km">200 km/hp</span>
+                </li>
+	 -->
 
 
 
