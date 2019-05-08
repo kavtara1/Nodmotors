@@ -61,7 +61,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100vh;
+	height: calc(100vh - 60px);
 	
 }
 .colors {
@@ -69,6 +69,29 @@ header{
     justify-content: center;
     margin-bottom: 11px;
 }
+
+.white2, .black2, .red2 {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	margin-left: 0 4px;
+
+}
+
+.white2 {
+	border: 1px solid;
+    border:1px solid #95a5a6;
+    box-sizing: border-box;
+}
+
+.black2 {
+	background:  #2a2b30;
+}
+
+.red2 {
+	background: #aa071e;
+}
+
 .green, .black, .red, .white, .gray, .yellow, .blue, .orange, .pink{
     width: 12px;
     height: 12px;
@@ -106,7 +129,7 @@ header{
     box-sizing: border-box;
 }
 .hero_content {
-	height: 100vh;
+	height: 100%;
 }
 .hero::before {
 	content: '';
@@ -144,10 +167,10 @@ option {
 
 
 
-.hero_content::after {
+.cars::before {
 	content: url(../images/scroll_down.png);
 	position: relative;	
-	bottom: 0;
+	top:-50px;
 	left: 0;
 	z-index: 5;
 }
@@ -269,4 +292,15 @@ footer  {
 .email:visited {
 	font-size: 14px;
 	color: #95a5a6;
+}
+
+
+/*page 2*/
+
+.page2_section1 {
+	display: flex;
+}
+
+.section_1_h1 {
+
 }
