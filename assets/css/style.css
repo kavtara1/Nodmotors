@@ -107,6 +107,7 @@ header{
 
 }
 
+
 .white2 {
 	border: 1px solid;
     border:1px solid #95a5a6;
@@ -343,10 +344,159 @@ footer  {
 
 /*page 2*/
 
-.page2_section1 {
+
+.hero_page2{
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: calc(100vh - 80px);
+}
+
+.page2_section_1::before {
+	content: url(../images/scroll_down.png);
+	position: relative;	
+	z-index: 5;
+	top: -50px;
+}
+.page2_section_1 {
+	display: flex;
+	
+}
+
+.section_1_p {
+	font-size: 14px;
+	color:  #95a5a6;
+}
+.article_p1 {
+	font-size: 14px;
+	color:  #95a5a6;
 }
 
 .section_1_h1 {
+	font-size: 30px;
+	margin-bottom: 30px
+}
+
+aside {
+	margin-right: 20px;
+}
+
+.section_1_p {
+	margin-bottom: 60px;
+}
+
+.article_p1{
+	margin-bottom: 42px;
+}
+
+.section_2_h1 {
+	font-size: 30px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 
 }
+.sectiont_2_p2 {
+	font-size: 14px;
+	color:  #95a5a6;
+	margin-bottom: 17px;
+}
+
+.stars {
+	display: flex;
+	justify-content: center;
+
+	border-radius: 10px;
+	background-color: #e8f0f3;
+}
+.star_list li {
+	font-family: caps;
+	font-size: 18px;
+	margin-bottom: 28px;
+}
+.star_span {
+	font-size: 14px;
+	color: #6AB04C;
+}
+.arcitcle_2_h1 {
+	font-size: 30px;
+}
+
+.arcitcle_2_p {
+	font-size: 14px;
+	color:  #95a5a6;
+}
+
+.page2_sectoin_2 {
+	display: flex;
+	padding-top: 40px;
+}
+.pictures {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.section_3_h1 { 
+	position: relative;
+	top: 100px;
+
+}
+
+.section_3_p {
+	font-size: 10px;
+ 	color: #95a5a6;
+ 	position: relative;
+	top: 100px;
+}
+
+.section_2_image_performance::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #181818;
+	opacity: 0.9;
+	top: 0;
+	left: 0; 
+	bottom: 0;
+}
+
+/*burger*/
+
+
+.change #book2 {
+	display: none;
+}
+
+
+.burger {
+	display: none;
+}
+
+/*.burger {
+	border: 1px solid #6AB04C;
+	width: 40px;
+	height: 30px;
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 20px 5px 20px;
+	border-radius: 30px;
+}
+.burger_item {
+	width: 30px;
+	height: 5px;
+	background: #FFF;
+	margin-top: 3.5px;
+	border-radius: 10px;
+
+
+}
+
+#bar1 {
+	transform: rotateZ(45deg);
+}
+#bar2 {
+	transform: translateY(-9px) rotate(-45deg);
+}*/

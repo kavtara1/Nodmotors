@@ -6,7 +6,7 @@ document.getElementById("onclick-button").text = "დამატებული
 }
 
 function onClickMenu(){
-	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("book2").class.toggle("change");
 	//document.getElementById("nav").classList.toggle("change");
 	//document.getElementById("menu-bg").classList.toggle("change");
 
