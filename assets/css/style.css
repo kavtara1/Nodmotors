@@ -25,14 +25,15 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 60px;
+	height: 80px;
 
 }
 
 .nav {
-	width: 271px;
+	width: 350px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	
 }
 
@@ -50,18 +51,46 @@ header{
 	position: relative;
 	top: 100px;
 	font-size: 30px;
+
 }
 .hero_p{
 	position: relative;
 	top: 102px;
 	font-size: 14px;
+	color: #FFF;
 }
 
+.from {
+	color: #95A5A6;
+	font-size: 12px;
+	
+}
+
+.book {
+	border: 1px solid #6AB04C;
+	padding: 10px 30px 10px 30px;
+	border-radius: 30px;
+
+}
+
+.book:hover {
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+}
+
+.price {
+	color: #6AB04C;
+	font-size: 12px;
+
+}
+.list_p {
+	text-align: right ;
+}
 .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: calc(100vh - 60px);
+	height: calc(100vh - 80px);
 	
 }
 .colors {
@@ -74,7 +103,7 @@ header{
 	width: 20px;
 	height: 20px;
 	border-radius: 20px;
-	margin-left: 0 4px;
+	
 
 }
 
@@ -219,16 +248,33 @@ form {
 	font-size: 14px;
 
 }
+
+.selector:hover {
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #181818;
+	transition: color 300ms ease;
+}
+
 .amount {
-  	width: 72px;
+	width: 72px;
  	height: 40px;
-  	border-radius: 30px;
-  	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+ 	border: 1px solid #FFF;
+	border-radius: 30px;
+	/*background-image: linear-gradient(to bottom, #6ab04c, #badc58);*/
+	box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
 	align-content: flex-end;
 	font-family: caps;
 	font-size: 14px;
-	color: #FFF;
+	color: #181818;
 	margin-left: auto;
+
+}
+
+.amount:hover {
+  	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #181818;
+	transition: color 300ms ease;
+  	
 }
 
 
