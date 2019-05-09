@@ -11,3 +11,12 @@ function onClickMenu(){
 	//document.getElementById("menu-bg").classList.toggle("change");
 
 }
+
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
