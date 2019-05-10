@@ -464,19 +464,21 @@ aside {
 
 /*burger*/
 .burger {
+	position: relative;
+	left: 250px;
 	border: 1px solid #6AB04C;
-	width: 40px;
-	height: 30px;
+	width: 20px;
+	height: 15px;
 	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 5px 20px 5px 20px;
+	padding: 10px 30px 10px 30px;
 	border-radius: 30px;
 }
 .burger_item {
-	width: 30px;
+	width: 15px;
 	height: 5px;
 	background: #FFF;
 	margin-top: 3.5px;
@@ -489,9 +491,12 @@ aside {
 	transform: rotateZ(45deg);
 }
 #bar2 {
-	transform: translateY(-9px) rotate(-45deg);
+	transform: translateY(-7px) rotate(-45deg);
 }
 
+.burger {
+	display: none;
+}
 
 
 #overlay {
@@ -505,7 +510,6 @@ aside {
   bottom: 0;
   background-color: #FFF; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
   opacity: 0.96;
 }
 
@@ -514,7 +518,6 @@ aside {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -532,6 +535,8 @@ aside {
 .input_types {
 	flex-direction: column;
 	align-items: center;
+	font-size: 18px;
+	font-family: caps;
 }
 .send {
 	width: 216px;
@@ -546,4 +551,10 @@ aside {
 .overlay_p {
 	font-size: 14px;
 	color:  #95a5a6;
+}
+
+
+
+.change #input {
+	display: none;
 }

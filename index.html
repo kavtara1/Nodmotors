@@ -49,24 +49,26 @@
 		</section>
 	</div>
 	<!-- overlay -->
-	<div id="overlay" onclick="off()">
+	<div id="overlay">
 
 
-		<div class="overlay_content">
+		<div class="overlay_content" id="content">
 				
 
-				<h1>Booking Form</h1>
+				<h1 id="overlay_h1">Booking Form</h1>
 				<p class="overlay_p">Includes Michelin Pilot Sport 4S tires, larger, more powerful brakes and lowered</p>
-			<form class="input_types">
+				<img id="green_image" src="">
+
+			<form class="input_types" id="input">
 				<input type="text"  class="name" name="name" placeholder="Name">
 				<input type="text"  class="phone" name="Phone" placeholder="Phone">
 				<input type="email" class="email" name="name" placeholder="Email">
 				<textarea  rows="4" cols="100" class="massage" placeholder="Massage"></textarea>
-				<button class="send">Send</button>
+				<button type="submit" class="send" onclick="hide()">Send</button>
 
 			</form>
 		</div>
-<div class="burger" id="menu">
+<div class="burger"  onclick="off()" id="menu">
  		<span class="burger_item" id="bar1"></span> 
  		<span class="burger_item" id="bar2"></span>
 
