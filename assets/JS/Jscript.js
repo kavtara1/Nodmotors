@@ -17,14 +17,6 @@ function hide(){
 	document.getElementById("green_image").src = "assets/images/pts2.png";
 
 
-}
-
- function test () {
- 	document.getElementById("book2").id.toggle("menu"); 
-}
-
-
-
 // function myFunction() {
 //    var element = document.getElementById("book2");
 //    element.class.toggle("burger");
@@ -39,3 +31,4 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+
