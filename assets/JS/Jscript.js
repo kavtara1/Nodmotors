@@ -17,11 +17,7 @@ function hide(){
 	document.getElementById("green_image").src = "assets/images/pts2.png";
 
 
-// function myFunction() {
-//    var element = document.getElementById("book2");
-//    element.class.toggle("burger");
-//    document.getElementById("overlay").style.display = "block";
-// }
+}
 
 function on() {
 
