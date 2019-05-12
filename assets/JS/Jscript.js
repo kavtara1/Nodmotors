@@ -1,30 +1,45 @@
-function changeid ()
-{
-var e = document.getElementById("a1");
-e.id = "onclick-button";
-document.getElementById("onclick-button").text = "დამატებულია";
-}
 
-// function onClickMenu(){
-	// document.getElementById("book2").class.toggle("change");
-	//document.getElementById("nav").classList.toggle("change");
-	//document.getElementById("menu-bg").classList.toggle("change");
+// document.addEventListener("DOMContentLoaded", function() {
+//   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+//   if ("IntersectionObserver" in window) {
+//     let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+//       entries.forEach(function(entry) {
+//         if (entry.isIntersecting) {
+//           let lazyImage = entry.target;
+//           lazyImage.src = lazyImage.dataset.src;
+//           lazyImage.srcset = lazyImage.dataset.srcset;
+//           lazyImage.classList.remove("lazy");
+//           lazyImageObserver.unobserve(lazyImage);
+//         }
+//       });
+//     });
+
+//     lazyImages.forEach(function(lazyImage) {
+//       lazyImageObserver.observe(lazyImage);
+//     });
+//   } else {
+//     // Possibly fall back to a more compatible method here
+//   }
+// });
+
 
 
 
 function hide(){
+
 	document.getElementById("input").innerHTML= "Thank you! Your message has been sent successfully.";	
 	document.getElementById("green_image").src = "assets/images/pts2.png";
-
-
 }
 
-function on() {
 
-  document.getElementById("overlay").style.display = "block";
+function onof() {
+  var x = document.getElementById("overlay");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
 
