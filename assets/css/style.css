@@ -469,36 +469,6 @@ aside {
 }
 
 /*burger*/
-.burger {
-	position: relative;
-	left: 250px;
-	border: 1px solid #6AB04C;
-	width: 20px;
-	height: 15px;
-	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 30px 10px 30px;
-	border-radius: 30px;
-}
-.burger_item {
-	width: 15px;
-	height: 5px;
-	background: #FFF;
-	margin-top: 3.5px;
-	border-radius: 10px;
-
-
-}
-
-#bar1 {
-	transform: rotateZ(45deg);
-}
-#bar2 {
-	transform: translateY(-7px) rotate(-45deg);
-}
 
 
 
@@ -594,6 +564,7 @@ aside {
 	.amount {
 		width: 164px;
 	}
+
 	.burger {
 	display: block;
 }
@@ -818,6 +789,51 @@ aside {
 	width: 100%;
 
 }
+
+/*burger*/
+
+	.burger {
+		width: 40px;
+		height: 40px;
+		display: block;
+		/*border: 1px solid black;*/
+			}
+	.burger_item  {
+
+		display: block;
+		width: 20px;
+		height: 3px;
+		background-color:#181818;
+		border-radius: 5px;
+		transition: 0.3s ease;
+		margin-right: 20px
+		}
+	
+
+#bar1 {
+	transform: translateY(-3px);
+}
+#bar3 {
+	transform: translateY(3px);
+}
+
+
+.change #bar1{
+	 
+	transform: translateY(3px) rotateZ(-45deg);
+	
+	}
+
+.change #bar3 {
+	
+	transform: translateY(-3px)  rotate(45deg);
+	
+}
+.change #bar2 {
+	opacity: 0;
+}
+
+
 @media (min-width :400px) {
 
 .hero {
